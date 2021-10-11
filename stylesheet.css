@@ -1,0 +1,247 @@
+body {
+    background-color: F5F5F4;
+    font-family: 'Arimo', sans-serif;
+}
+
+/* Below is related to the navbar. */
+
+#navbar_li {
+    display: inline;
+    float: left;
+    border-right: 1px solid ababa4;
+}
+
+#navbar_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: F2936A;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+}
+
+
+/*#navbar_li:last-child {
+    border-right: none;
+}*/
+
+#navbar_li a {
+    display: block;
+    color: f5f5f4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-color: af8d8f;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar_li a:hover {
+    background-color: AF8D8F;
+}
+
+.active {
+    background-color: F5F5F4;
+}
+
+/* Below are the image opacity effects. */
+
+img {
+    margin: 15px;
+    border-style: solid;
+    border-color: 665955;
+    border-width: 15px;
+    z-index: 2;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+img:hover {
+    z-index: 1;
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+
+
+
+/* This is where I am putting my layout. */
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  
+  /* Style the header */
+  .header {
+    background-color: 665955;
+    padding: 1px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    color: ababa4;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 10%;
+    height: 1000px;
+    background-color: AF8D8F;
+  }
+  
+  /* Middle column of homepage */
+  .column.middle.homepage {
+    width: 80%;
+    height: 1000px;
+    text-align: center;
+  }
+
+    /* Middle column of background page */
+.column.middle.background {
+  width: 80%;
+  height: 1000px;
+  background-color: f2936a;
+}
+
+/* Middle column of webdev */
+.column.middle.webdev {
+  width: 80%;
+  height: 1000px;
+  text-align: left;
+}
+
+/* Block intro why web development */
+
+.block {
+color: f5f5f4;
+background-color: f2936a;
+padding:10px;
+font-size: 40px;
+border-radius: 500px;
+text-align: center;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: 665955;
+    padding: 10px;
+    text-align: center;
+    color: f5f5f4;
+  }
+
+  .footer.hobbies {
+    background-color: f2936A;
+    padding: 10px;
+    text-align: center;
+    color: f5f5f4;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+  /* This is where I am keeping some classes. */
+
+  .quote {
+      color: f5f5f4;
+      background-color: f2936a;
+      padding:10px;
+      font-size: 40px;
+      border-radius: 500px;
+  }
+
+  .info {
+     background-color: F2936A;
+     color: F5F5F4; 
+     padding: 25px;
+     margin: 25px;
+     border-style: solid;
+     border-width: 15px;
+     border-color: AF8D8F;
+  }
+
+  /* This is where I am storing items for the hobbies page. */
+
+  td.image {
+      width: 30px;
+  }
+
+  .text_dark {
+      font-family: sans-serif;
+      color: f5f5f4;
+      font-size: xx-large;
+      background-color: 665955;
+      height: 150;
+      padding: 50px
+  }
+
+  .text_orange {
+      font-family: sans-serif;
+      color: f5f5f4;
+      font-size: xx-large;
+      background-color: f2936a;
+      height: 150;
+      padding: 50px;
+  }
+
+.dark {
+  width: 100%;
+  position: center;
+}
+
+.orange {
+  width: 100%;
+  position: center;
+}
+
+.hobbies {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+textarea {
+  width: 40%;
+}
+
+h2.form {
+  background-color: ababa4;
+  padding: 1%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* This is for the background page */
+
+.prose {
+  color: f5f5f4;
+  font-size: x-large;
+}
+
+.backgroundblock {
+  color: f5f5f4;
+  background-color: af8d8f;
+  padding:10px;
+  font-size: 40px;
+  border-radius: 500px;
+  text-align: center;
+}
